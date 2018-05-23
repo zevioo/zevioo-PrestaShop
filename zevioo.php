@@ -181,8 +181,10 @@ class Zevioo extends Module
 			'DDT' => '',
 			'EML' => $email,
             'FN' => $first_name,
-			'LN' => $last_name,
-            'ITEMS' => $products_array
+			'LN' => substr($last_name,0,1),
+			'ITEMS' => $products_array
+			
+			
         );
 
         return $orderData;
